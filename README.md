@@ -1,4 +1,4 @@
-# Advent of Code Kotlin Template
+# AoC2022
 
 [Advent of Code][aoc] – an annual event in December since 2015.
 Every year since then, with the first day of December, a programming puzzles contest is published every day for twenty-four days.
