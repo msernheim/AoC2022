@@ -51,8 +51,8 @@ fun main() {
         val index = findDividingRow(input)
         val cargoMap = getCargoMap(input.slice(IntRange(0, index - 1)))
         val moves = getMoves(input.drop(index + 1))
-        val newMap = executeMoves(cargoMap, moves, reverse)
-        return newMap.values.map{ stack -> stack[stack.length - 1]}.toString()
+        executeMoves(cargoMap, moves, reverse)
+        return cargoMap.values.map{ stack -> stack[stack.length - 1]}.toString()
     }
 
 
