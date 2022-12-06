@@ -1,5 +1,3 @@
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane.MoveAction
-
 fun main() {
 
     fun findDividingRow(input: List<String>): Int {
