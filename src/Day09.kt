@@ -22,7 +22,6 @@ fun main() {
         input.forEach { instruction ->
             val dir = instruction.split(" ").first()
             val length = instruction.split(" ").last().toInt()
-            println(instruction)
             for (i in 0 until length) {
                 when (dir) {
                     "R" -> currentHead.X++
@@ -57,7 +56,6 @@ fun main() {
         input.forEach { instruction ->
             val dir = instruction.split(" ").first()
             val length = instruction.split(" ").last().toInt()
-            println(instruction)
             for (i in 0 until length) {
                 when (dir) {
                     "R" -> rope[0].X++
