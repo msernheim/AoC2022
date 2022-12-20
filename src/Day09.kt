@@ -80,30 +80,3 @@ fun main() {
     println("Result part2: $part2")
 }
 
-class Coord(var X: Int, var Y: Int) {
-    override fun equals(other: Any?): Boolean {
-        if (this === other) return true
-        if (javaClass != other?.javaClass) return false
-
-        other as Coord
-
-        if (X != other.X) return false
-        if (Y != other.Y) return false
-
-        return true
-    }
-
-    override fun hashCode(): Int {
-        var result = X
-        result = 31 * result + Y
-        return result
-    }
-
-    override fun toString(): String {
-        return "(X=$X, Y=$Y)"
-    }
-
-    fun toPair(): Pair<Int, Int> {
-        return Pair(this.X, this.Y)
-    }
-}
